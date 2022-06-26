@@ -8,6 +8,7 @@
 :root {
   --hue: 260;
   --primary-color: hsl(var(--hue), 84%, 51%);
+  --primary-color-with-opacity: hsl(260, 84%, 51%, 0.1);
   --hedline: hsl(210, 11%, 15%);
   --bg-light: hsl(180, 14%, 97%);
   --paragraph: hsl(210, 9%, 31%);
@@ -470,9 +471,57 @@ footer .social-links {
   transform: translateY(0);
 }
 
+/*======== FORMULARIO ========*/
+
+#form {
+  height: calc(43% + var(--nav-height));
+  background-color: var(--brand-light);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #5e17eb;
+  font-weight: 700;
+}
+
+.buttonsubmit {
+  background: var(--primary-color);
+
+  border: none;
+  border-radius: 4rem;
+
+  margin: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+
+  text-decoration: none;
+
+  transition: background 200ms;
+}
+
+.button:hover {
+  background-color: var(--brand-dark);
+}
+
+.opaco {
+  color: #5e17eb;
+  background-color: var(--primary-color-with-opacity);
+}
+
 /*======== RESPONSIVIDADE ========*/
 
 @media (min-width: 1024px) {
+
   /*======== GERAL ========*/
 
   body {
@@ -747,16 +796,6 @@ footer .social-links {
 
   footer p {
     margin-bottom: 0;
-  }
-
-  /*======== FORMULARIO ========*/
-
-  #form {   
-    height: calc(100% + var(--nav-height));
-    background-color: var(--brand-light); 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
   }
 
 }

@@ -11,46 +11,47 @@
     <!-- Minha CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
     <title>MeuTesouro: Cadastro</title>
 </head>
 
 <body>
     <section id="form">
-        <div class="wrapper">
-            <div class="col-a">
-                <a href="https://storyset.com/social-media">Social media illustrations by Storyset
-                    <img src="./assets/Subscriber-pana.svg" alt="Ilustração de homem clicando em subscribe">
-                </a>
+        <div class="col-a">
+            <a href="https://storyset.com/social-media">Social media illustrations by Storyset
+                <img src="./assets/Subscriber-pana.svg" alt="Ilustração de homem clicando em subscribe">
+            </a>
+        </div>
+        <div class="col-b">
+            <div class="mb-3">
+                <label for="NomeCompleto" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo">
             </div>
-            <div class="col-b">
-                <div class="mb-3">
-                    <label for="NomeCompleto" class="form-label">Nome Completo</label>
-                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo">
-                </div>
-                <div class="mb-3">
-                    <label for="Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="mb-3">
-                    <label for="Celular" class="form-label">Celular</label>
-                    <input type="number" class="form-control" id="celular" placeholder="Celular">
-                </div>
-                <div class="mb-3">
-                    <label for="CPF" class="form-label">CPF</label>
-                    <input type="number" class="form-control" id="cpf" placeholder="CPF">
-                </div>
-                <div class="mb-3">
-                    <label for="Senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="senha" placeholder="Senha">
-                </div>
-                <div class="mb-3">
-                    <label for="ConfirmacaoDeSenha" class="form-label">Confirmação de Senha</label>
-                    <input type="password" class="form-control" id="confirmacaoDeSenha"
-                        placeholder="Confirmação de Senha">
-                </div>
-                <input class="button" type="submit" value="Cadastrar">
-                <input class="button" type="submit" value="Já sou cadastrado">
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
+            <div class="mb-3">
+                <label for="Celular" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="celular" placeholder="Celular">
+            </div>
+            <div class="mb-3">
+                <label for="CPF" class="form-label">CPF</label>
+                <input type="number" class="form-control" id="cpf" placeholder="CPF">
+            </div>
+            <div class="mb-3">
+                <label for="Senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+            <div class="mb-3">
+                <label for="ConfirmacaoDeSenha" class="form-label">Confirmação de Senha</label>
+                <input type="password" class="form-control" id="confirmacaoDeSenha" placeholder="Confirmação de Senha">
+            </div>
+            <input class="buttonsubmit" type="submit" value="Cadastrar">
+            <input class="buttonsubmit opaco" type="submit" value="Já sou cadastrado">
         </div>
     </section>
     <script src="./js/bootstrap.bundle.js"></script>
