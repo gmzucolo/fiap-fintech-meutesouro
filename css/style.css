@@ -68,7 +68,7 @@ html {
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
-    color: var(--primary-color);
+    color: var(--paragraph);
     margin-bottom: 1.6rem;
     text-transform: uppercase;
   }
@@ -411,7 +411,7 @@ html {
     gap: 0.8rem;
   }
   
-  /*======== CONTACT ========*/
+  /*======== FOOTER ========*/
   
   footer {
     background-color: var(--primary-color);
