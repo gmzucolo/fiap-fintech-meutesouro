@@ -337,6 +337,7 @@ html {
   
   body.expanded-menu .logo,
   body.expanded-menu nav button {
+    visibility: hidden;
     position: relative;
     z-index: 100;
   }
@@ -478,6 +479,7 @@ html {
     .wrapper {
       width: min(112rem, 100%);
       display: grid;
+      align-items: center;
     }
   
     .col-a {
@@ -489,7 +491,7 @@ html {
     }
   
     section {
-      padding-block: 16rem;
+      padding-block: 10rem;
     }
   
     section header h2 {
