@@ -102,7 +102,7 @@ section .content p {
   background: var(--primary-color);
 
   border: none;
-  border-radius: 4rem;
+  border-radius: 2rem;
 
   margin-bottom: 6rem;
 
@@ -311,7 +311,7 @@ body.expanded-menu .menu {
 
 .menu .button {
   background: white;
-  border-radius: 4rem;
+  border-radius: 2rem;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -476,35 +476,40 @@ footer .social-links {
 #form {
   height: calc(43% + var(--nav-height));
   background-color: var(--brand-light);
-  align-items: center;
   display: flex;
   flex-direction: column;
+  width: min(50rem, 100%);
+  margin-inline: auto;
 }
 
 .form-label {
   color: #5e17eb;
   font-weight: 700;
+  font-size: 2rem;
+}
+
+.input {
+  font-size: 1.6rem;
+}
+
+.checkbox {
+  margin-top: 3.2rem;
 }
 
 .buttonsubmit {
   background: var(--primary-color);
 
   border: none;
-  border-radius: 4rem;
-
-  margin: 6rem;
-
-  padding: 1.6rem 3.2rem;
+  border-radius: 2rem;
+  
+  margin: 3.5rem;
+  padding: 1.6rem 6.4rem;
   width: fit-content;
 
   color: white;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
-
-  display: flex;
-
-  text-decoration: none;
 
   transition: background 200ms;
 }
@@ -513,10 +518,14 @@ footer .social-links {
   background-color: var(--brand-dark);
 }
 
-.opaco {
-  color: #5e17eb;
+.opacity {
+  margin-top: 0;
+   color: #5e17eb;
   background-color: var(--primary-color-with-opacity);
+  padding: 1.6rem 3.2rem;
 }
+
+
 
 /*======== RESPONSIVIDADE ========*/
 
@@ -601,7 +610,7 @@ footer .social-links {
     padding: 1rem 2.4rem;
 
     border: 1px solid var(--primary-color);
-    border-radius: 4rem;
+    border-radius: 1rem;
 
     color: var(--primary-color);
 
